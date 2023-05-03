@@ -10,6 +10,11 @@ namespace Heroes.Models.Weapons
         private string name;
         private int durability;
 
+        public Weapon(string name, int durability)
+        {
+            Name = name;
+            Durability = durability;
+        }
         public string Name 
         { 
             get => name;
