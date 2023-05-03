@@ -13,6 +13,12 @@ namespace Heroes.Models.Heroes
         private IWeapon weapon;
         private bool isAlive;
 
+        public Hero(string name, int health, int armour)
+        {
+            Name = name;
+            Health = health;
+            Armour = armour;
+        }
         public string Name 
         { 
             get => name;
@@ -68,7 +74,17 @@ namespace Heroes.Models.Heroes
         public bool IsAlive 
         { 
             get => isAlive;
-            private set => isAlive = value;
+            private set
+            {
+                if (Health > 0)
+                {
+                    isAlive = true;
+                }
+                else
+                {
+                    isAlive = false;
+                }
+            }
         }
 
         public void AddWeapon(IWeapon weapon)
