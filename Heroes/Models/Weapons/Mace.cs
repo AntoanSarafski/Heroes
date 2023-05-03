@@ -4,7 +4,11 @@ using System.Text;
 
 namespace Heroes.Models.Weapons
 {
-    internal class Mace
+    public class Mace : Weapon
     {
+        public Mace(string name, int durability) 
+            : base(name, durability)
+        {
+        }
     }
 }

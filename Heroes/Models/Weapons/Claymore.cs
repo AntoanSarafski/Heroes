@@ -4,7 +4,11 @@ using System.Text;
 
 namespace Heroes.Models.Weapons
 {
-    internal class Claymore
+    public class Claymore : Weapon
     {
+        public Claymore(string name, int durability) 
+            : base(name, durability)
+        {
+        }
     }
 }
