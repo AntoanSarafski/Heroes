@@ -7,7 +7,7 @@ using System.Text;
 
 namespace Heroes.Repositories
 {
-    internal class HeroRepository : IRepository<IHero>
+    public class HeroRepository : IRepository<IHero>
     {
         private List<IHero> heroes;
         public IReadOnlyCollection<IHero> Models => heroes.AsReadOnly();
