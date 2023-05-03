@@ -1,10 +1,22 @@
-﻿using System;
+﻿using Heroes.Models.Contracts;
+using System;
 using System.Collections.Generic;
 using System.Text;
 
 namespace Heroes.Models.Weapons
 {
-    internal class Weapon
+    public abstract class Weapon : IWeapon
     {
+        private string name;
+        private int durability;
+
+        public string Name { get => name; private set => name = value; }
+
+        public int Durability { get => durability; private set => durability = value; }
+
+        public int DoDamage()
+        {
+            throw new NotImplementedException();
+        }
     }
 }
