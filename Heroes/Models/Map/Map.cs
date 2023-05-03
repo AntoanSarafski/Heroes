@@ -10,6 +10,7 @@ namespace Heroes.Models.Map
         public string Fight(ICollection<IHero> players)
         {
             throw new NotImplementedException();
+
         }
     }
 }
