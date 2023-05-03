@@ -22,7 +22,7 @@ namespace Heroes.Models.Weapons
             {
                 if (String.IsNullOrWhiteSpace(value))
                 {
-                    throw new ArgumentException("Weapon type cannot be null or empty.";
+                    throw new ArgumentException("Weapon type cannot be null or empty.");
                 }
                 name = value;
             }
