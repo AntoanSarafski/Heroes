@@ -10,5 +10,6 @@ namespace Heroes.Models.Weapons
             : base(name, durability)
         {
         }
+ 
     }
 }
