@@ -43,6 +43,7 @@ namespace Heroes.Models.Weapons
 
         public int DoDamage()
         {
+
             throw new NotImplementedException();
         }
     }
